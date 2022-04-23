@@ -1,0 +1,22 @@
+create table test1 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test2 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test3 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test4 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test5 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test6 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test7 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test8 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test9 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+create table test10 (age real, workclass text, fnlwgt real, education text, education_num real, marital_status text, occupation text, relationship text, race text, sex text, capital_gain real, capital_loss real, hours_per_week real, native_country text, economic_indicator text);
+\copy test1 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_1.csv delimiter ',' csv;
+\copy test2 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_2.csv delimiter ',' csv;
+\copy test3 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_3.csv delimiter ',' csv;
+\copy test4 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_4.csv delimiter ',' csv;
+\copy test5 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_5.csv delimiter ',' csv;
+\copy test6 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_6.csv delimiter ',' csv;
+\copy test7 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_7.csv delimiter ',' csv;
+\copy test8 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_8.csv delimiter ',' csv;
+\copy test9 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_9.csv delimiter ',' csv;
+\copy test10 from /Users/piushagullapalli/Documents/Spring_22/645/Project/seeDb/seeDB/Data/splits/split_10.csv delimiter ',' csv;
+
+create view census as select * from test1 union select * from test2 union select * from test3 union select * from test4 union select * from test5 union select * from test6 union select * from test7 union select * from test8 union select * from test9 union select * from test10;
